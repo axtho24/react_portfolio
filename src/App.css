@@ -1,38 +1,358 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.fullWidth {
+  padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: white;
+  border-bottom: solid thin #65696d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar .navbar-brand {
+  font-family: "Lemonada", cursive;
+  font-size: 2.25rem;
+}
+
+.navbar .navbar-brand:hover {
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card .card-img {
+  opacity: 0.3;
+}
+
+.card .card-img-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.self {
+  width: 50%;
+  height: 50%;
+  border: solid thick #2c3034;
+  opacity: 0.9;
+}
+
+.about {
+  margin: 3% 0;
+}
+
+.about .row {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.personal-links a {
+  color: #2b2f33;
+}
+
+.personal-links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.btn-link {
+  color: #2b2f33;
+  padding: 0;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.skills {
+  margin: 4%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portfolio {
+  background-color: #65696d;
+}
+
+.portfolio h1 {
+  color: white;
+}
+
+.portfolio h1 header {
+  padding: 2% 0;
+}
+
+.portfolio h1 .card:hover {
+  cursor: pointer;
+}
+
+.portfolioImage {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.projectLinks {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projectLinks a {
+  color: white;
+}
+
+.portfolio-hover {
+  background: rgba(101, 105, 109, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+
+.portfolio-hover:hover {
+  opacity: 1 !important;
+}
+
+.portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+
+.portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 5%;
+  position: relative;
+}
+
+.timeline header {
+  padding: 2% 0;
+}
+
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+
+.timeline > li:before, .timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #65696d;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+
+.timeline > li .timeline-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline > li .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline > li .timeline-heading h4.subheading {
+  text-transform: none;
+}
+
+.timeline > li .timeline-body > p,
+.timeline > li > ul {
+  margin-bottom: 0;
+}
+
+.footer {
+    padding: 2%;
+    background: #65696d;
+}
+
+.footer a, .footer button {
+    color: white;
+}
+
+.active {
+  color: #0056b3 !important;
+}
+
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+
+@media (max-width: 396px) {
+  .card h2 {
+    font-size: x-large;
+  }
+  .card h4 {
+    font-size: unset;
   }
 }
