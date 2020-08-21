@@ -26,8 +26,8 @@ const SamsModal = (props) => {
             <Image src={SamsThird} fluid className="portfolioImage"/>
 
           <p>
-            Personla portfolio site build for my SO. As a student in the Master program she was very buys until the night before, when inform she needed a new site deploy
-            to GoDaddy. Build was build over night to be be presented to other students and professionals. The plan is to move this simple prototype and recreat it with Vue.js
+            Personla portfolio site build for my partner. As a student in the Costume Tech Master program she was very busy until the night before website was due, was informed she needed a new site deploy
+            to GoDaddy. Site was build over night to be be presented to other students and professionals. The plan is to move this simple prototype and recreat it with Vue.js
             to improve design and load times.
             <br/>
             <br/>
