@@ -21,7 +21,7 @@ const SiteModal = (props) => {
         <Modal.Body>
             <Image src={PortfolioImage} fluid className="portfolioImage"/>
           <p>
-            Personal website that I created to display my most recent work, as well future ideas for projects.
+            Personal website that I created to display my most recent work, as well as future ideas for projects.
             <br/>
             <br/>
             Technologies Used:<br/>
