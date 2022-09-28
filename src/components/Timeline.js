@@ -4,6 +4,7 @@ import UARK from './portfolio_images/uark.jpg';
 import TIY from './portfolio_images/TIY.png';
 import Analytic from './portfolio_images/AO.png';
 import HBS from './portfolio_images/hbs.png';
+import Rategenius from './portfolio_images/rategenius.png'
 
 const Timeline = () => {
     return (
@@ -83,6 +84,25 @@ const Timeline = () => {
                                         with developing a completely new form that would be use by many of our clients in the medical field. Not only did I developed the form but 
                                         also designed it, and was able to integrate it with our current platform. I was able to dive a bit into the backend of the developer side
                                         and use some PHP as well as MySQL and I most defintely can't wait to try out new languages and learn new things.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="timeline-image">
+                                <Image className="img-responsive" src={Rategenius} roundedCircle />
+                            </div>
+                            <div className="timeline-panel">
+                                <div className="timeline-heading">
+                                    <h4>2020</h4>
+                                    <h4 className="subheading">Rategenius</h4>
+                                </div>
+                                <div className="timeline-body">
+                                    <p className="text-muted">
+                                        With covid hitting many businesses I was fortune to be working for Rategenius. The expectation of me as a developer increased and I couldn't be
+                                        more please and excited about. There are numerous task given to me, learned a good stablished workflow using Jira, and used many tools throughout 
+                                        my assigned tickets from Bootstrap, Vue, VueRouter, lodash, Docker, Wordpress, and many other tools to impleted new services, fix existing bugs, 
+                                        and updating current services.
                                     </p>
                                 </div>
                             </div>
